@@ -23,3 +23,19 @@ export const addLoanBook = async (req, res) => {
         return res.status(500).send({message: 'Error registering category', err: err})
     }
 }
+
+export const deleteLoanBook = async(req, res)=>{
+    try{
+        //Capturar el id de la 'categoria' a eliminar
+        let { id } = req.params
+        //Eliminar
+        let deletedLoanBook = await LoanBook.deleteOne({_id: id})
+        //Validar que se eliminó
+        if(deletedLoanBook.deletedCount === 0) return res.status(404).send({message: 'Loan not found and not deleted'})
+        //Responder
+        return res.send({message: 'Deleted loan successfully'})
+    }catch(err){
+        console.error(err)
+        return res.status(404).send({message: 'Error deleting loan'})
+    }
+}
