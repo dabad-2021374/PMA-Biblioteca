@@ -1,0 +1,228 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ConsultasBiblioteca",
+    "dateExported": "2024-03-08T17:28:27.986Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "df6bcc2f-da33-4cc5-88a9-2d8d7b37e318",
+            "name": "ADMIN",
+            "containerId": "",
+            "created": "2024-03-08T15:14:02.134Z",
+            "sortNum": 10000,
+            "settings": {
+                "headers": [
+                    {
+                        "name": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViMWI2MTdiNTI4MjhmYzg3YmFhN2QiLCJ1c2VybmFtZSI6ImRlZmF1bHQiLCJuYW1lIjoiZGVmYXVsdCIsImlhdCI6MTcwOTkxNDUxMywiZXhwIjoxNzEwMDAwOTEzfQ.eSzeMJEmwLQXUZJ5iDJe0ecRBS2WjZf3jzbvLLEKDLc"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "d4cd81fc-4f4b-4911-b2a3-e5a27f38e157",
+            "name": "CLIENT",
+            "containerId": "",
+            "created": "2024-03-08T15:14:07.688Z",
+            "sortNum": 20000,
+            "settings": {
+                "headers": [
+                    {
+                        "name": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViMWI2MTdiNTI4MjhmYzg3YmFhN2QiLCJ1c2VybmFtZSI6ImRlZmF1bHQiLCJuYW1lIjoiZGVmYXVsdCIsImlhdCI6MTcwOTkxNDUxMywiZXhwIjoxNzEwMDAwOTEzfQ.eSzeMJEmwLQXUZJ5iDJe0ecRBS2WjZf3jzbvLLEKDLc"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "b89017bf-306c-4798-99e1-aa604c480ab8",
+            "name": "EVERYONE",
+            "containerId": "",
+            "created": "2024-03-08T15:14:13.454Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "79d3c4c5-945f-4ff5-a5df-bb55f4559a49",
+            "colId": "06ed890e-19c8-433d-b064-3e0e96fba8b2",
+            "containerId": "df6bcc2f-da33-4cc5-88a9-2d8d7b37e318",
+            "name": "add Book",
+            "url": "addBook",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-08T15:15:47.843Z",
+            "modified": "2024-03-08T16:28:34.163Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "El principe"
+                    },
+                    {
+                        "name": "author",
+                        "value": "Nicolas Maquiavelo "
+                    },
+                    {
+                        "name": "category",
+                        "value": "65eb3c82f40f020448ef4c16"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "6e88a45f-a024-4fc2-804a-99f1f2f4b430",
+            "colId": "06ed890e-19c8-433d-b064-3e0e96fba8b2",
+            "containerId": "df6bcc2f-da33-4cc5-88a9-2d8d7b37e318",
+            "name": "update book",
+            "url": "updateBook/65eb3cb2f40f020448ef4c1c",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2024-03-08T16:28:56.186Z",
+            "modified": "2024-03-08T16:33:05.389Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "El principe",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "author",
+                        "value": "Nicolas Maquiavelo ",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "category",
+                        "value": "65eb3d995f182bee3373086c"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "01c11df9-dc42-44c4-944f-659e7467a5c2",
+            "colId": "06ed890e-19c8-433d-b064-3e0e96fba8b2",
+            "containerId": "df6bcc2f-da33-4cc5-88a9-2d8d7b37e318",
+            "name": "add Category",
+            "url": "addCategory",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-08T15:18:47.646Z",
+            "modified": "2024-03-08T16:32:13.232Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Filosofia"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Categoria de Filosofia"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "8def4afc-9ac7-4210-92c9-320751b78905",
+            "colId": "06ed890e-19c8-433d-b064-3e0e96fba8b2",
+            "containerId": "b89017bf-306c-4798-99e1-aa604c480ab8",
+            "name": "Login",
+            "url": "login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-08T16:13:39.160Z",
+            "modified": "2024-03-08T16:14:26.099Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "default"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a4df7e89-fa4d-4b7f-ba62-3adfda123fd9",
+            "colId": "06ed890e-19c8-433d-b064-3e0e96fba8b2",
+            "containerId": "d4cd81fc-4f4b-4911-b2a3-e5a27f38e157",
+            "name": "get Categories",
+            "url": "getCategories",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-08T16:36:15.108Z",
+            "modified": "2024-03-08T16:36:21.763Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "876c2f43-4eb5-4bcc-a2da-e2ce10425765",
+            "colId": "06ed890e-19c8-433d-b064-3e0e96fba8b2",
+            "containerId": "df6bcc2f-da33-4cc5-88a9-2d8d7b37e318",
+            "name": "delete Category",
+            "url": "deleteCategory/65eb3d995f182bee3373086c",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-08T16:39:11.299Z",
+            "modified": "2024-03-08T16:43:17.531Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2e11b59f-80a5-42f1-9841-11ed65573037",
+            "colId": "06ed890e-19c8-433d-b064-3e0e96fba8b2",
+            "containerId": "d4cd81fc-4f4b-4911-b2a3-e5a27f38e157",
+            "name": "Loan book",
+            "url": "addLoanBook",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-08T16:49:59.567Z",
+            "modified": "2024-03-08T17:08:48.097Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "book",
+                        "value": "65eb3beff40f020448ef4c13"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:3056/"
+        }
+    }
+}
