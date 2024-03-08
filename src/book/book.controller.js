@@ -41,3 +41,33 @@ export const updateBook = async (req, res) => {
         return res.status(500).send({ message: 'Error updating book' })
     }
 }
+
+export const getBooks = async (req, res) => {
+    try {
+        let books = await Book.find();
+        return res.send({books});
+    } catch (err) {
+        console.error(err);
+        return res.status(500).send({ message: 'Error fetching books', err: err });
+    }
+}
+
+export const filterAZ = async (req, res) => {
+    try {
+        let books = await Book.find().sort({ name: 1 })
+        return res.send({ books })
+    } catch (err) {
+        console.error(err)
+        return res.status(500).send({ message: 'Error fetching companies' })
+    }
+}
+
+export const filterZA = async (req, res) => {
+    try {
+        let book = await Book.find().sort({ name: -1 })
+        return res.send({ book })
+    } catch (err) {
+        console.error(err)
+        return res.status(500).send({ message: 'Error fetching companies' })
+    }
+}
